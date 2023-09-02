@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Raleway:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #e0ecfd;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    min-width: 100%;
+}
+
+.Container-principal > *{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -1px 3px 7px 0px #000;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Container-principal{
+    display: grid;
+    gap: 10;
+    grid-template-columns: 350px auto auto;
+    grid-template-rows:repeat(6,1fr);
+    margin: 10px 30px 10px 30px;
+    height: 97vh;
+}
+
+.Usuario-interfaz{
+    background-color: aqua;
+    grid-column: 1/1; 
+    grid-row: 1/7; 
+}
+
+.Institucion-interfaz{
+    background-color: bisque;
+    grid-column: 2/4; 
+    margin: 0px 0px 15px 15px;
+}
+
+.Contenido-interfaz{
+    grid-column: 2/4; 
+    grid-row: 2/7;
+    margin: 0px 0px 0px 15px;
+
+}
