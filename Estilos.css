@@ -201,6 +201,7 @@ body{
     border: none;
     font-weight: bold;
     margin-right: 15px;
+    box-shadow: 3px 3px 5px #17513b;
 }
 
 .Nombre-Institucion h3{
@@ -211,6 +212,7 @@ body{
 .Button-Salir-Interfaz:hover{
     cursor: pointer;
     background-color: #2d9d72;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 @media (min-width: 1366px) {
@@ -562,4 +564,121 @@ body{
 .Ingresar_Obs:hover{
     cursor: pointer;
     background-color: #2d9d72;
+}
+
+
+
+/*-----CAMBIAR_CONTRASEÑA.HTML--------*/
+
+.Cambio_Contraseña{
+    margin: auto;
+    margin-top: 20px;
+    width: 85%;
+    height: 70vh;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 45px 25px 25px 25px 40px 50px;
+}
+
+.First_h3_Contraseña{
+    grid-column: 1/8;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.Contraseña_Actual{
+    grid-column: 1/8;
+    grid-row: 2;
+}
+
+.Contraseña_Actual input{
+    border: 1px solid #17513b;
+    border-radius: 5px;
+    box-shadow: 0 0 2.5px #0a2319;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    cursor:text;
+    margin-left: 30px;
+}
+
+
+.Nueva_Contraseña{
+    grid-column: 1/8;
+    grid-row: 3; 
+}
+
+.Nueva_Contraseña input{
+    border: 1px solid #17513b;
+    border-radius: 5px;
+    box-shadow: 0 0 2.5px #0a2319;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    cursor:text;
+    margin-left: 30px;
+}
+
+.Confirmar_Contraseña{
+    grid-column: 1/8;
+    grid-row: 4;
+}
+
+.Confirmar_Contraseña input{
+    border: 1px solid #17513b;
+    border-radius: 5px;
+    box-shadow: 0 0 2.5px #0a2319;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    cursor:text;
+    margin-left: 2px;
+}
+
+.Confirmar_Buttom_Contraseña{
+    grid-column: 4;
+    grid-row: 5;
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    margin-right: 15px;
+    margin-top: 15px;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Confirmar_Buttom_Contraseña:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.Regresar_Buttom_Contraseña{
+    grid-column: 2;
+    grid-row: 5;
+    width: 130px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    margin-right: 15px;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Regresar_Buttom_Contraseña:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+.end_h3_Contraseña{
+    grid-column: 1/8;
+    grid-row: 6;
+    margin-top: 240px;
 }
