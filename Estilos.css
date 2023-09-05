@@ -216,7 +216,12 @@ body{
 @media (min-width: 1366px) {
     .Container-principal{
         gap: 10;
-        grid-template-columns: 350px auto auto;
+        grid-template-columns: 300px auto auto;
+    }
+
+    .Botton-Act-Datos{
+        margin-top: 0px;
+
     }
 }
 
@@ -233,13 +238,18 @@ body{
         grid-template-columns: 220px auto auto;
         margin: 5px 15px 5px 15px;
     }
+    .nav_link{
+        font-size: 11px;
+ 
+    }
+
 }
   
 @media screen and (max-width: 767px) {
     .Container-principal{
         gap: 10;
         margin: 5px 15px 5px 15px;
-        grid-template-columns: 200px auto auto;
+        grid-template-columns: 20px auto auto;
     }
 
     .nav_link{
@@ -253,12 +263,13 @@ body{
 /*-----OBERVADOR_ESTUDIANTE.HTML--------*/
 .Observador-Estudiante-1{
     margin: auto;
+    padding-top: 20px;
     width: 85%;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 80px auto 80px;
-    background-color: #63af92;
+    grid-template-rows: 50px auto 80px;
+;
 }
 
 .h3-Obs-Est{
@@ -274,8 +285,10 @@ body{
     /*GRID TABLE*/
     display: grid;
     gap: 10px;
+    padding-top: 20px;
     grid-template-columns: 15px auto auto auto auto auto 15px;
     grid-row: 50px auto 50px;
+    border-radius: 15px;
 }
 
   .h3_observador{
@@ -288,6 +301,7 @@ body{
   .h3_observador_2{
     grid-column: 5;
     grid-row: 1;
+    
   }
 
   .Container_Table_Observador{
@@ -313,17 +327,21 @@ body{
   .Regresar_Button_Obs_Est{
     grid-column: 3;
     grid-row: 3;
-    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 150px;
     height: 35px;
-    border-radius: 20px;
     background-color: #3dc792;
     border: none;
     font-weight: bold;
-    margin-right: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
   }
 
-  .Regresar_Button_Obs_Est span{
-    padding-bottom: 15px;
+  .Regresar_Button_Obs_Est:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
   }
 
   .Imprimir_Button_Obs_Est{
@@ -331,7 +349,7 @@ body{
     grid-row: 3;
     margin-bottom: 10px;
     border-radius: 10px;
-    width: 180px;
+    width: 150px;
     height: 35px;
     background-color: #3dc792;
     border: none;
@@ -346,26 +364,31 @@ body{
     background-color: #2d9d72;
   }
 
-  .Imprimir_img_button{
-
-  }
-
   .Descargar_Button_Obs_Est{
     grid-column: 6;
     grid-row: 3 ;
-    width: 90px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 180px;
     height: 35px;
-    border-radius: 20px;
     background-color: #3dc792;
     border: none;
     font-weight: bold;
-    margin-right: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .Descargar_Button_Obs_Est:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
   }
 
 .Informacion-Obs-Est{
     grid-column: 1/4;
     grid-row: 3;
-    text-align: justify;
+    text-align: center;
+    margin-top: 80px;
 }
 
 
