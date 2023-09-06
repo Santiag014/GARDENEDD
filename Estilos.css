@@ -682,3 +682,271 @@ body{
     grid-row: 6;
     margin-top: 240px;
 }
+
+/*----ACTUALIZAR_DATOS.HTML----*/
+
+.form_action_Actualizacion{
+    width: 200px ;
+    height: 63vh;
+    max-width: 910px;
+    margin: 20 auto;
+    display: grid;
+    margin-left: 35px;
+    margin-top: 30px;
+    grid-gap: 20px; 
+    grid-template-columns: repeat(4, 1fr);   
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.h3_star{
+    text-align: justify;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.Xaja_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 450px;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+#nombre{
+    width: 320px;;
+}
+
+.caja_2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 490px;
+    margin-left: -330px;
+    padding: 5px 10px 5px 10px;
+}
+
+#apellido{
+    width: 320px;
+}
+
+.caja_2 label{
+    margin-left: -80px;
+}
+
+.caja_3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -20px;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    padding-bottom: 10px;
+}
+
+#Tipo_Documento{
+    width: 220px;
+}
+
+.caja_4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: -330px;
+    margin-top: -20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.caja_4 label{
+    margin-left: -210px;
+}
+
+#Nro_Documento{
+    width: 220px;
+}
+
+.caja_5{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -40px;
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+#Fecha_Nacimiento{
+    width: 230px;
+}
+
+.caja_6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-left: -330px;
+    margin-top: -40px;
+    padding: 5px 10px 5px 10px;
+}
+
+#Lugar_Nacimiento{
+    width: 220px;
+}
+
+.caja_6 label{
+    margin-left: -210px;
+}
+
+.caja_7{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 900px;
+    margin-top: -60px;
+    margin-left: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+#Direccion_Actualizacion{
+    width: 755px;
+}
+
+.caja_8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: -80px;
+    margin-left: 10px;
+    width: 600px;
+    padding: 5px 10px 5px 10px;
+}
+
+#Barrio_Actualizacion{
+    width: 490px;
+}
+
+.caja_9{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: -80px;
+    margin-left: -200px;
+    width: 300px;
+    padding: 5px 10px 5px 10px;
+}
+
+#Telefono_Actualizacion{
+    width: 178px;
+}
+.caja_10{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 450px;
+    margin-left: 10px;
+    margin-top: -95px;
+}
+
+#EPS_Actualizacion{
+    width: 360px;
+}
+.caja_11{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    margin-left: 10px;
+    margin-top: -95px;
+    margin-left: -330px;
+    width: 200px;
+}
+
+#Tipo_Sangre{
+    width: 60px;
+}
+
+.caja_12{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    margin-left: -440px;
+    margin-top: -95px;
+    width: 220px;
+}
+
+#RH_Actualizacion{
+    width: 168px;
+}
+.caja_13{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: -115px;
+    width: 900px;
+    margin-left: 5px;
+}
+
+#Titulo_Profesional{
+    width: 687px;
+}
+
+.caja_14{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -135px;
+    margin-left: 10px;
+}
+
+#Fecha_Ingreso{
+    width: 240px;
+}
+
+.caja_15{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-left: -20px;
+    margin-top: -135px;
+    width: 450px;
+}
+
+#Jornada_Actualizacion{
+    width: 307px;
+}
+
+.caja_16{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 900px;
+    margin-top: -155px;
+    margin-left: 5px;
+}
+
+#Tutor_Actualizacion{
+    width: 795px;
+}
+
+.Modificar_Actualizacion{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: #0a3d85;
+    margin-top: -150px;
+    margin-left: 50px;
+    width: 220px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Modificar_Actualizacion:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.Menu_Principal{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    margin-left: -480px;
+    margin-top: -150px;
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Menu_Principal:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
