@@ -43,6 +43,26 @@ body{
     overflow: auto;
 }
 
+.Usuario-interfaz::-webkit-scrollbar {
+    width: 12px;
+    background-color: #8addbd;
+    border-radius: 2px;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+
+}
+
+.Usuario-interfaz::-webkit-scrollbar-thumb {
+    background-color: #5cd0a4; 
+    border-radius: 10px; 
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.Contenido-interfaz::-webkit-scrollbar-thumb:hover {
+    background-color: #2d9d72; 
+}
+
+
+
 .Img-Usuario-Interfaz h5{
     /*background-color: antiquewhite;*/
     margin-top: -10px;
@@ -167,13 +187,6 @@ body{
     align-items: center;
 }
 
-.Contenido-interfaz{
-    grid-column: 2/4; 
-    grid-row: 2/7;
-    margin: 0px 0px 0px 15px;
-    overflow: auto;
-    background-color: #f1f7ff;
-}
 
 /*.Contenido-interfaz::-webkit-scrollbar {
     width: 12px;
@@ -214,6 +227,109 @@ body{
     background-color: #2d9d72;
     transition: cubic-bezier(0.23, 1, 0.320, 1);
 }
+
+.Contenido-interfaz{
+    grid-column: 2/4; 
+    grid-row: 2/7;
+    margin: 0px 0px 0px 15px;
+    overflow: auto;
+    background-color: #f1f7ff;
+}
+
+.Contenido-Interfaz-Administrativo-Principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    flex: auto;
+}
+
+.Imag-Interfaz-Administrativo{
+    width: 85%;
+    height: 35%;
+    background-color: #134230;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.InformacionIns-Interfaz-Administrativo{
+    width: 85%;
+    height: 10%;
+    align-self: flex-end;
+
+}
+
+.Interacciones-Interfaz-Admninistrativo{
+    width: 85%;
+    height: 25%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.GestionCursos-Interfaz{
+    width: 100px;
+    height: 40px;
+    flex:auto;
+    flex-direction:column;
+    align-items: center;
+    margin: 10px 20px 40px 20px;
+
+}
+
+.RegistroMatricula-Interfaz{
+    width: 100px;
+    height: 40px;
+    flex:auto;
+    flex-direction:column;
+    align-items: center;
+    margin: 10px 20px 40px 20px;
+}
+
+.ObservadorEstudiantil-Interfaz{
+    width: 100px;
+    height: 40px;
+    flex:auto;
+    flex-direction:column;
+    align-items: center;
+    margin: 10px 20px 80px 20px;
+}
+
+.RegistroDocente-Interfaz{
+    width: 100px;
+    height: 40px;
+    flex:auto;
+    flex-direction:column;
+    align-items: center;
+    margin: 10px 20px 40px 20px;
+}
+
+.GestionCursos-Interfaz a, .RegistroMatricula-Interfaz a, .ObservadorEstudiantil-Interfaz a, .RegistroDocente-Interfaz a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+.GestionCursos-Interfaz img:hover, .RegistroMatricula-Interfaz img:hover, .ObservadorEstudiantil-Interfaz img:hover, .RegistroDocente-Interfaz img:hover{
+    background: linear-gradient(to bottom, #c5c5c5, #f6f6f6);
+    border: 1px solid #000;
+    box-shadow: 4px 4px 5px #000;
+}
+
+.GestionCursos-Interfaz img, .RegistroMatricula-Interfaz img, .ObservadorEstudiantil-Interfaz img, .RegistroDocente-Interfaz img{
+    background: linear-gradient(to bottom, #a8e6ce, #c6efdf);
+    border: 1px solid #17513b;
+    padding: 10px;
+    width: 85px;
+    height: auto;
+    box-shadow: 4px 4px 5px #17513b;
+}
+
+
 
 @media (min-width: 1366px) {
     .Container-principal{
@@ -256,8 +372,5 @@ body{
 
     .nav_link{
         font-size: 11px;
- 
     }
-
-
 }
