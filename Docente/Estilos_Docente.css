@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
 
 *{
@@ -40,6 +41,7 @@ body{
     background: linear-gradient(to bottom, #a8e6ce, #c6efdf);
     grid-column: 1/1; 
     grid-row: 1/7; 
+    overflow: auto;
 }
 
 .Img-Usuario-Interfaz h5{
@@ -258,9 +260,9 @@ body{
  
     }
 
-
 }
-  
+
+
 /*-----OBERVADOR_ESTUDIANTE.HTML--------*/
 .Observador-Estudiante-1{
     margin: auto;
@@ -282,7 +284,7 @@ body{
 .Div-Table{
     grid-column: 1/4;
     grid-row: 2;
-    background-color: #a8e6ce;
+    background-color: #b7ead7;
     /*GRID TABLE*/
     display: grid;
     gap: 10px;

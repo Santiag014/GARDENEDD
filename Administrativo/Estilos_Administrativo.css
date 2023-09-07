@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #e0ecfd;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2rem;
+    min-width: 100%;
+}
+
+/*-----PLANTILLA_INTERFAZ_DOCENTE-------*/
+
+.Container-principal > *{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 1px  #0a2319;
+    overflow: hidden;
+    text-align: center;
+}
+
+.Container-principal{
+    display: grid;
+    gap: 10;
+    grid-template-columns: 350px auto auto;
+    grid-template-rows:repeat(6,1fr);
+    margin: 10px 30px 10px 30px;
+    height: 97vh;
+}
+
+.Usuario-interfaz{
+    background: linear-gradient(to bottom, #a8e6ce, #c6efdf);
+    grid-column: 1/1; 
+    grid-row: 1/7; 
+    overflow: auto;
+}
+
+.Img-Usuario-Interfaz h5{
+    /*background-color: antiquewhite;*/
+    margin-top: -10px;
+}
+
+.Img-Usuario{
+    width: 130px;
+    height: auto;
+}
+
+.Menu-Interfaz-Docente{
+    padding: 5px 10px;
+    /*background-color: #7197cc;*/
+    border-radius: 10px;
+    margin: 15px 0 0 0;
+}
+
+.nav_link{
+    color: #000;
+    font-size: 14px;
+    display: block;
+    padding: 3px 0;
+    text-decoration: none;
+}
+
+.nav_link_new{
+    margin-left: -15px;
+    font-weight: bold;
+}
+.nav_link--inside:hover{
+    background-color: #6bd5ac;
+}
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.list{
+    width: 100%;
+    /*height: 65vh;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*background-color: #afc3df;*/
+}
+
+.list-item{
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-item--click{
+    cursor: pointer;
+}
+
+.list-button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0px auto;
+}
+
+.arrow .list-arrow{
+    transform: rotate(90deg);
+}
+
+.list-arrow{
+    margin-left:auto ;
+    transition: transform .3s;
+}
+
+.list-show{
+    margin-left: auto;
+    border-left: 1px solid #000;
+    list-style: none;
+    transition: height .4s;
+    /*height: 0;*/
+}
+
+.list-new{
+    margin-left: 15px;
+    list-style: none;
+    transition: height .4s;
+    /*height: 0;*/
+}
+.logo img{
+    width: 150px;
+    height: auto;
+    clip-path: inset(15% 0 0 0);
+    margin-top: -10px;
+    margin: -10px 0px 0px 15px;
+    filter:saturate(80%);
+    
+}
+.Botton-Act-Datos{
+    width: 180px;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 10px;
+    background-color: #3dc792;
+    box-shadow: 3px 3px 5px #17513b;
+    color: #0a2319;
+    border: none;
+    font-weight: bold;
+}
+.Botton-Act-Datos:hover{
+    cursor: pointer;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    background-color: #2d9d72;
+}
+
+.Institucion-interfaz{
+    background-color: #a8e6ce;
+    grid-column: 2/4; 
+    margin: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Contenido-interfaz{
+    grid-column: 2/4; 
+    grid-row: 2/7;
+    margin: 0px 0px 0px 15px;
+    overflow: auto;
+    background-color: #f1f7ff;
+}
+
+/*.Contenido-interfaz::-webkit-scrollbar {
+    width: 12px;
+    background-color: #8addbd;
+    border-radius: 2px;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+
+}
+
+.Contenido-interfaz::-webkit-scrollbar-thumb {
+    background-color: #36bb88; 
+    border-radius: 3px; 
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.Contenido-interfaz::-webkit-scrollbar-thumb:hover {
+    background-color: #2d9d72; 
+}*/
+
+.Button-Salir-Interfaz{
+    width: 90px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    margin-right: 15px;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Nombre-Institucion h3{
+    text-shadow: 2px 2px 4px #134230;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+.Button-Salir-Interfaz:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+@media (min-width: 1366px) {
+    .Container-principal{
+        gap: 10;
+        grid-template-columns: 300px auto auto;
+    }
+
+    .Botton-Act-Datos{
+        margin-top: 0px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .Container-principal{
+        gap: 10;
+        grid-template-columns: 280px auto auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .Container-principal{
+        gap: 10;
+        grid-template-columns: 220px auto auto;
+        margin: 5px 15px 5px 15px;
+    }
+    .nav_link{
+        font-size: 11px;
+ 
+    }
+
+}
+  
+@media screen and (max-width: 767px) {
+    .Container-principal{
+        gap: 10;
+        margin: 5px 15px 5px 15px;
+        grid-template-columns: 20px auto auto;
+    }
+
+    .nav_link{
+        font-size: 11px;
+ 
+    }
+
+
+}
