@@ -379,8 +379,7 @@ body{
 
 .Container-AddStudent{
     width: 90%;
-    height: 100%;
-    background-color: aquamarine;
+    height: 115%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -389,67 +388,299 @@ body{
     flex: auto;
 }
 
-.Container-AddStudent h5{
-    text-align: justify;
-    align-items: flex-start;
+.h3_Matricula_AddStudent{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    padding-left: 10px;
+}
+
+.h5_Matricula_AddStudent{
+    width: 100%;
+    height: 4%;
+    display: flex;
+    padding-left: 50px;
 }
 
 .Informacion_Est_AddStudent{
-    background-color: #0a2319;
     width: 100%;
-    height: 30%;
+    flex-direction: row;
+    flex-wrap: wrap;
     display: flex;
-
+    align-items: center;
+    justify-content:flex-start;
+    flex: auto;
+    /*margin: 5px;*/
 }
 
+.Informacion_Est_AddStudent> *{
+    padding-top: 5px;
+    margin: 0px;
+   
+}
   .Foto-Perfil-AddStudent{
-    width: 20%;
-    height: 100%;
-    background-color: blueviolet;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-perfil{
+    background: linear-gradient(to bottom, #a8e6ce, #c6efdf);
+    border: 1px solid #000;
+    width: 180px;
+    height: auto;
   }
 
   .Informacion_AddStudent{
-    width: 80%;
-    height: 100%;
-    background-color: yellowgreen;
+    width: 75%;
     flex-direction: row;
-    display: flex;
     flex-wrap: wrap;
-    align-content:flex-start ;
-    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex: auto;
   }
 
-    .Caja_Informacion_AddStudent, .Caja_Informacion_AddStudent_Special, .Caja_Informacion_AddStudent_Special-2{
-        height: 20px;
-        width: 45%;
-        padding: 10px;
-        flex-wrap: wrap;
-    }
+  .Informacion_AddStudent input, .Informacion_AddStudent_2 input, .Informacion_Acad_AddStudent input,
+  .Informacion_Acud_AddStudent input{
+    width: auto;
+    border: 1px solid #17513b;
+    border-radius: 5px;
+    box-shadow: 0 0 2.5px #0a2319;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    cursor:text;
+    margin-left: 10px
+  }
 
-    .Caja_Informacion_AddStudent label , .Caja_Informacion_AddStudent_Special label, .Caja_Informacion_AddStudent_Special-2 label{
-        font-size: 14px;
-        margin-left: auto;
-    }
-
-    .Caja_Informacion_AddStudent input{
-        width: 100px;
-    }
-
-    .Caja_Informacion_AddStudent_Special input{
-        width: 90px;
-    }
-    .Caja_Informacion_AddStudent_Special-2 input{
-        width: 40px; 
-    }
+  .Informacion_AddStudent label, .Informacion_AddStudent_2 label, .Informacion_Acad_AddStudent label,
+  .Informacion_Acud_AddStudent label{
+    font-size: 16px;
+    text-align: none;
+    margin-left: 25px;
+    margin-bottom: 10px;
+  }
 
 .Informacion_Acad_AddStudent{
-    background-color: #2d9d72;
     width: 100%;
-    height: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    align-items: center;
+    justify-content:flex-start
 }
 
 .Informacion_Acud_AddStudent{
-    background-color: #c6efdf;
     width: 100%;
-    height: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    align-items: center;
+    justify-content:flex-start
 }
+
+.Botones_AddStudent{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-end;
+}
+
+.Button-save-AddStuden{
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    margin-right: 15px;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Button-save-AddStuden:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+}
+
+.Button-cancel-AddStuden{
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    margin-right: 15px;
+    box-shadow: 3px 3px 5px #17513b;
+}
+
+.Button-cancel-AddStuden:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+}
+
+.Button-eliminarRegistro{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #3dc792;
+    border: none;
+    font-weight: bold;
+    margin-right: 15px;
+    box-shadow: 3px 3px 5px #17513b;
+}
+.Button-eliminarRegistro:hover{
+    cursor: pointer;
+    background-color: #2d9d72;
+}
+.footer-AddStudent{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-end;
+}
+
+/*---OBSERVAR-REGISTRO-MATRICULA-ADMINISTRATIVO.HTML----*/
+
+
+.Container-Observador-Estudiante{
+    width: 85%;
+    display: grid;
+    gap: 10;
+    margin: 10px 60px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 40px 30px auto 30px auto 35px auto auto 50px;
+}
+
+.Obs-Est-h3{
+    /*background-color: aquamarine;*/
+    grid-column: 1/7;
+}
+
+.Obs-Est-h3 h3{
+    text-align: justify;
+}
+
+.h4-Info-Est{
+    /*background-color: blue;*/
+    grid-column: 1/3;
+    grid-row: 2;
+}
+
+.Container-Info-Est{
+    /*background-color: burlywood;*/
+    grid-column: 1/7;
+    grid-row: 3;
+    /*Estilos Contenedor para Display Grid*/
+    display: grid;
+    gap: 10;
+    grid-template-columns: 200px auto auto;
+}
+
+  .foto-Info-Est{
+    /*background-color: darkgreen;*/
+    grid-column: 1;
+    grid-row: 1/7;
+  }
+
+  .Img-Obs-Est{
+    width: 140px;
+    height: 130px;
+  }
+
+  .Info-Est{
+    display: flex;
+    align-items: center;
+   }
+
+   .Info-Est p{
+    font-size: 16px;
+    padding-left: 3px;
+   }
+
+   .Info-Est h6{
+    font-size: 15px;
+    padding-top: -15px;
+   }
+   
+.h4-InfoAcad-Est{
+    /*background-color: chartreuse;*/
+    grid-column: 1/3;
+    grid-row: 4;
+    margin-top: 15px;
+
+}
+
+.h4-Info-Est h4{
+    font-weight:900;
+}
+
+.Container-InfoAcad-Est{
+    /*background-color: chocolate;*/
+    grid-column: 1/7;
+    grid-row: 5;
+    margin-top: 13px;
+    /*Estilos Contenedor para Display Grid*/
+    display: grid;
+    gap: 10;
+    grid-template-columns: auto auto auto;
+}
+  .InfoAcad-Est{
+    display: flex;
+    align-items: center;
+  }
+
+  .InfoAcad-Est p{
+    font-size: 16px;
+    padding-left: 3px;
+   }
+
+   .InfoAcad-Est h6{
+    font-size: 15px;
+    padding-top: -15px;
+   }
+
+.h4-InfoAcudi-Est{
+    /*background-color: cornflowerblue;*/
+    grid-column: 1/3;
+    grid-row: 6;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.Container-InfoAcudi-Est{
+    /*background-color: darkgreen;*/
+    grid-column: 1/7;
+    grid-row: 7;
+    margin-top: 10px;
+    /*Estilos Contenedor para Display Grid*/
+    display: grid;
+    gap: 10;
+    grid-template-columns: auto auto;
+}
+  .InfoAcudi-Est{
+    display: flex;
+    align-items: center;
+  }
+
+  .InfoAcudi-Est p{
+    font-size: 16px;
+    padding-left: 3px;
+   }
+
+   .InfoAcudi-Est h6{
+    font-size: 15px;
+    padding-top: -15px;
+   }
+
+   .botton-observar-registroMatricula{
+    margin-top: 10px;
+    grid-column: 2;
+    grid-row: 8;
+   }
