@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+html,body{
+    background-color: #e5fee8;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    vertical-align: top;
+    height: 100vh;
+}
+
+header {
+    width: 1000px;
+    margin: 0 auto; 
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 20%;
+}
+
+.header-text {
+    width: 79%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.logo-Inicio{
+    clip-path: inset(15% 0 0 0);
+}
+
+form p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: auto;
+    margin: 20px 0;
+}
+
+hr{
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+footer{
+    width: 1000px;
+    margin: 0 auto; 
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+footer img{
+    width: 10%;
+    margin-left: 25%;
+}
+
+footer p{
+    width: 89%;
+    padding: 0;
+    margin: 0;
+    margin-right: 25%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #191970;
+}
+
+div#all {
+    width: 1000px;
+    margin: 0 auto; 
+}
+
+button, a.botton{
+    display: block;
+    margin: 10px auto;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 2px solid #4aacce;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
+a.botton{
+    display: inline-block;
+    margin-bottom: 10px;
+ }
+
+
+button:hover, a.botton:hover{
+    background-color: #cfedff;
+    border-color: #4aacce;
+    cursor: pointer;
+
+}
+
+label{
+    text-align:right;
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+input{
+    display: inline-block;
+    width: 75%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #4aacce;
+
+}
+
+input:focus{
+    background-color: #cfedff;
+    border-color: #4aacce;
+}
+input:hover{
+    border-color: #4aacce;
+}
+
+section div p{
+    font-size: 16px;
+}
+
+
+
+
+
+/***************** login.php *****************/
+
+
+section#main {
+    display: block;
+    max-width: 100%;
+    width: 30%;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    section#main {
+        width: 90%;
+    }
+}
+
+section#main div.caja-de-ingreso h3{
+    display: block;
+    text-align: left;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+section#main div.caja-de-ingreso a{
+    margin-top: 10px;
+    text-align: right;
+    display: block;
+}
+
+
+
+
+
+
+/***************** usuario.php *****************/
+/*section#info{
+    border-radius: 10px;
+    background-color: #cfedff;
+    width: 25%;
+    min-height: 100px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 4px 8px rgba(74, 172, 206, 0.5);
+    text-align: center;
+}
+
+section#info img {
+    max-width: 100px;
+    display: block;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid rgba(74, 172, 206, 1);
+    vertical-align: top;
+}
+
+section#info h3{
+    text-align: center;
+    font-size: 13px;
+}
+
+section#info ul{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+section#info li span{
+    font-weight: 700;
+}
+
+section#info li{
+    list-style: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+section#info li:hover{
+    text-decoration: underline;
+}
+
+
+
+section#body{
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 73%;
+    min-height: 100px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 1%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    text-align: center;
+}
+
+section#body button {
+    display: inline-block;
+
+}
+*/
+
+
+
+
+
+/***************** menu.php *****************/
+
+
+/*nav{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;    
+}
+
+nav ul{    
+    margin: 0 auto;
+    padding: 0;
+    float: right;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0;
+    width: auto;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#cfedff, #e4f5ff, #1b8fb3);
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover{    
+    color: #1b8fb3;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.submenu li {
+    display: block;
+    margin: 0;
+    padding: 10px 10px;
+    width: 230px;
+    height: auto;    
+}
+
+.submenu a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+*/
+
+
+
+
+
+/***************** cambio de foto de perfil.php *****************/
+
+
+div.cambiar-foto{    
+    width: 1000px;
+    margin: auto;
+}
+
+.profile-image img {
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 25px;
+}
+
+.boton-cambio-perfil-1{
+    display: inline-block;
+    width: auto;
+    margin-left: 35%;
+    margin-right: 3%;
+}
+
+.boton-cambio-perfil-2{
+    display: inline-block;
+    width: auto;
+    margin-left: 3%;
+    margin-right: 35%;
+}
+
+.boton-cambio-perfil-regresar{
+    display: block;
+    width: auto;
+    margin: 25% 5% 5% 75%;
+}
+
+.seleccion-foto{
+    width: auto;
+    height: auto;
+    margin: 25px 25%;
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-seleccion-foto{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.parrafo-seleccion-foto{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.boton-cambiar-foto{
+    display: block;
+    width: auto;    
+}
